@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <title>Portal de Noticias</title>
+  </head>
+  <body>
+    <div class="topo">
+      <div class="topo_interior">
+        <div class="topo_left">
+          <ul>
+            <li><a href="./" class="ativo">Home</a></li>
+            <li><a href="quem-somos">Quem Somos</a></li>
+            <li><a href="anuncie-aqui">Anuncie Aqui</a></li>
+            <li><a href="contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="topo_right">
+          <input type="image" src="assets/images/lupa.png" border="0px" width="26px" height="26px" value="">
+          <input type="text" name="busca" class="topobusca" placeholder="Busca..." value=""/>
+          <a href="#"><img src="assets/images/youtube.png" border="0px"
+            width="26px" height="26px"></a>
+          <a href="#"><img src="assets/images/twitter.png" border="0px"
+            width="26px" height="26px"></a>
+          <a href="#"><img src="assets/images/facebook.png" border="0px"
+            width="26px" height="26px"></a>
+          <a href="#"><img src="assets/images/googleplus.png" border="0px"
+            width="26px" height="26px"></a>
+          <a href="#"><img src="assets/images/rss.png" border="0px"
+            width="26px" height="26px"></a>
+        </div>
+      </div>
+    </div>
+    <div class="meio">
+      <div class="meio_interior">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="logo da empresa">
+        </div>
+        <div class="propaganda">
+          <img src="assets/images/Anuncie-Aqui.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="centro">
+      <div class="centro_interior">
+        <img src="assets/images/menu.png" class="menumobile" onclick="toggleMenu()"  border="0" width="40" height="40"/>
+        <ul id="menu" >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Economia</a></li>
+          <li>
+            <a href="#">Entretenimento</a>
+            <img src="assets/images/downarrow.png" border="0px" width="10px"/>
+            <div class="submenu">
+              <a href="#"><div class="submenuitem">Item 1</div></a>
+              <a href="#"><div class="submenuitem">Item 2</div></a>
+            </div>
+          </li>
+          <li>
+            <a href="#">Esportes</a>
+            <img src="assets/images/downarrow.png" border="0px" width="10px"/>
+            <div class="submenu">
+              <a href="#"><div class="submenuitem">Item 1</div></a>
+              <a href="#"><div class="submenuitem">Item 2</div></a>
+              <a href="#"><div class="submenuitem">Item 3</div></a>
+            </div>
+          </li>
+          <li><a href="#">Geral</a></li>
+          <li>
+            <a href="#">Noticias</a>
+            <img src="assets/images/downarrow.png" border="0px" width="10px"/>
+            <div class="submenu">
+              <a href="#"><div class="submenuitem">Item 1</div></a>
+              <a href="#"><div class="submenuitem">Item 2</div></a>
+              <a href="#"><div class="submenuitem">Item 3</div></a>
+              <a href="#"><div class="submenuitem">Item 4</div></a>
+              <a href="#"><div class="submenuitem">Item 5</div></a>
+            </div>
+          </li>
+          <li><a href="#">Policia</a></li>
+          <li><a href="#">Videos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="noticia">
+      <div class="noticia_interior">
+        <div class="text-interior">
+          <div class="texto-left">
+              <label>ÚLTIMAS NOTÍCIAS</label>
+          </div>
+          <div class="texto-right">
+            <label>Criador da internet teme a perda de todas as nossas memorias digitais no futuro</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-interior">
+        <div class="container-left">
+          <div class="slideshow" id="slideshow">
+            <div class="slideball">
+              <div class="ball" id="ball" onclick="mudarSlide(0)"></div>
+              <div class="ball" id="ball2" onclick="mudarSlide(1)"></div>
+              <div class="ball" id="ball3" onclick="mudarSlide(2)"></div>
+              <div class="ball" id="ball4" onclick="mudarSlide(3)"></div>
+            </div>
+            <div class="slideshowarea">
+              <div class="slide" style="background-image:url('assets/images/slideshow.png')">
+                <!--<img src="assets/images/slideshow.png" />-->
+                  <div class="slideinfo">
+                    <div class="slideinfo_titulo">"Pensei na minha filha"</div>
+                    <div class="slideinfo_subtitulo">diz jovem que salvou crianca de pitbull</div>
+                  </div>
+              </div>
+              <div class="slide" style="background-image:url('assets/images/slideshow2.png')">
+                <div class="slideinfo">
+                  <div class="slideinfo_titulo">Bolsa Familia</div>
+                  <div class="slideinfo_subtitulo">Beneficiarios do bolsa familia tem ate dia 30/12 para fazer acompanhamento de saude</div>
+                </div>
+              </div>
+              <div class="slide" style="background-image:url('assets/images/slideshow3.png')">
+                <div class="slideinfo">
+                  <div class="slideinfo_titulo">Venda de sentencas</div>
+                  <div class="slideinfo_subtitulo">MP pede prisao de juiz suspeito de venda de sentencas</div>
+                </div>
+              </div>
+              <div class="slide" style="background-image:url('assets/images/slideshow4.png')">
+                <div class="slideinfo">
+                  <div class="slideinfo_titulo">Exemplo de solidariedade</div>
+                  <div class="slideinfo_subtitulo">Cobrador ajuda passageiro cego e ganha aplausos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-right">
+          <div class="social">
+              <div class="social-superior">
+                <label>SOCIAL</label>
+              </div>
+              <div class="social-inferior">
+                <a href="#"><img src="assets/images/youtube.png" border="0px"
+                  width="26px" height="26px"></a>
+                <a href="#"><img src="assets/images/twitter.png" border="0px"
+                  width="26px" height="26px"></a>
+                <a href="#"><img src="assets/images/facebook.png" border="0px"
+                  width="26px" height="26px"></a>
+                <a href="#"><img src="assets/images/googleplus.png" border="0px"
+                  width="26px" height="26px"></a>
+                <a href="#"><img src="assets/images/rss.png" border="0px"
+                  width="26px" height="26px"></a>
+              </div>
+          </div>
+          <div class="social">
+            <div class="social-superior">
+              <label>ÚLTIMAS NOTÍCIAS</label>
+            </div>
+            <div class="social-inferior">
+              <div class="publicidadeitem">
+                <a href="./"><label>Policia Militar prende quadrilha com drogas e
+                  metralhadora na zona norte de Terezina.</label></a>
+              </div>
+              <div class="publicidadeitem">
+                <a href="./"><label>Em retorno ao Mineirão, Cruzeiro empata por
+                  1 x 1 com a Caldense no Campeonato Mineiro.</label></a>
+              </div>
+              <div class="publicidadeitem">
+                <a href="./"><label>"Pessoas como ela são alicerces para que o
+                  melhor da moda não morra!"</label></a>
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <div class="social-superior">
+              <label>PUBLICIDADE</label>
+            </div>
+            <div class="social-inferior">
+              <img src="assets/images/banner.jpg" width="273" border="0" alt="">
+            </div>
+          </div>
+          <div class="social">
+            <div class="social-superior">
+              <label>ENCONTRE-NOS NO FACEBOOK</label>
+            </div>
+            <div class="social-inferior">
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=273&height=121&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="273" height="121" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <div class="conteudo">
+          <div class="social">
+            <div class="social-superior">
+              <label>NOTICIAS</label>
+            </div>
+            <div class="social-inferior">
+              <div class="conteudo-left">
+                <div class="conteudo-item conteudobig">
+                  <div class="conteudo-img">
+                    <img src="" border="0" width="80" height="80" alt="" />
+                  </div>
+                  <div class="conteudo-titulo">Algum titulo maior que o exemplo exemplo exemplo exemplo exemplo</div>
+                  <div class="conteudo-info">Exmplo de texto</div>
+                </div>
+              </div>
+              <div class="conteudo-right">
+                <div class="conteudo-item">
+                  <div class="conteudo-img">
+                    <img src="" border="0" width="80" height="80" alt="" />
+                  </div>
+                  <div class="conteudo-titulo">Algum titulo</div>
+                  <div class="conteudo-info">Exmplo de texto</div>
+                </div>
+                <div class="conteudo-item">
+                  <div class="conteudo-img">
+                    <img src="" border="0" width="80" height="80" alt="" />
+                  </div>
+                  <div class="conteudo-titulo">Algum titulo</div>
+                  <div class="conteudo-info">Exmplo de texto</div>
+                </div>
+                <div class="conteudo-item">
+                  <div class="conteudo-img">
+                    <img src="" border="0" width="80" height="80" alt="" />
+                  </div>
+                  <div class="conteudo-titulo">Algum titulo</div>
+                  <div class="conteudo-info">Exmplo de texto</div>
+                </div>
+                <div class="conteudo-item">
+                  <div class="conteudo-img">
+                    <img src="" border="0" width="80" height="80" alt="" />
+                  </div>
+                  <div class="conteudo-titulo">Algum titulo</div>
+                  <div class="conteudo-info">Exmplo de texto</div>
+                </div>
+              </div>
+                <div style="clear:both"></div>
+            </div>
+          </div>
+          </div>
+          <div class="conteudo">
+            <div class="social">
+              <div class="social-superior">
+                <label>ESPORTES</label>
+              </div>
+              <div class="social-inferior">
+                <div class="conteudo-left">
+                  <div class="conteudo-item conteudobig">
+                    <div class="conteudo-img">
+                      <img src="" border="0" width="80" height="80" alt="" />
+                    </div>
+                    <div class="conteudo-titulo">Algum titulo maior que o exemplo exemplo exemplo exemplo exemplo</div>
+                    <div class="conteudo-info">Exmplo de texto</div>
+                  </div>
+                </div>
+                <div class="conteudo-right">
+                  <div class="conteudo-item">
+                    <div class="conteudo-img">
+                      <img src="" border="0" width="80" height="80" alt="" />
+                    </div>
+                    <div class="conteudo-titulo">Algum titulo</div>
+                    <div class="conteudo-info">Exmplo de texto</div>
+                  </div>
+                  <div class="conteudo-item">
+                    <div class="conteudo-img">
+                      <img src="" border="0" width="80" height="80" alt="" />
+                    </div>
+                    <div class="conteudo-titulo">Algum titulo</div>
+                    <div class="conteudo-info">Exmplo de texto</div>
+                  </div>
+                  <div class="conteudo-item">
+                    <div class="conteudo-img">
+                      <img src="" border="0" width="80" height="80" alt="" />
+                    </div>
+                    <div class="conteudo-titulo">Algum titulo</div>
+                    <div class="conteudo-info">Exmplo de texto</div>
+                  </div>
+                  <div class="conteudo-item">
+                    <div class="conteudo-img">
+                      <img src="" border="0" width="80" height="80" alt="" />
+                    </div>
+                    <div class="conteudo-titulo">Algum titulo</div>
+                    <div class="conteudo-info">Exmplo de texto</div>
+                  </div>
+                </div>
+                  <div style="clear:both"></div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
